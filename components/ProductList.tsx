@@ -13,7 +13,7 @@ export default function ItemList({ productList }: PropsType) {
           <div key={product.id}>
             <p>{product.name}</p>
             <p>
-              등록일자 : {format(new Date(product.createdAt), "yyyy년 M월 d일")}
+              등록일자: {format(new Date(product.createdAt), "yyyy년 M월 d일")}
             </p>
             <p>{product.price}</p>
           </div>

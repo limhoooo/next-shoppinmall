@@ -11,8 +11,6 @@ export default function Home() {
   const { data: productList } = useQuery<products[]>(["getProduct"], () =>
     getProductFetch()
   );
-  console.log(typeof productList);
-
   return (
     <main>
       <ProductList productList={productList as products[]} />

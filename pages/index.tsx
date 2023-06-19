@@ -6,6 +6,8 @@ export default function Home() {
   const getProductFetch = async () => {
     const res = await fetch("/api/get-products");
     const data = await res.json();
+    console.log(data);
+
     return data.items;
   };
   const { data: productList } = useQuery<products[]>(["getProduct"], () =>
